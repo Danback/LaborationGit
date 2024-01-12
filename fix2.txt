@@ -7,3 +7,96 @@ git cherry-pick f1f5a81
 
 git remote add origin https://github.com/Danback/LaborationGit.git
 git push -u origin main
+
+
+1: 
+git init
+git branch -m master main
+
+2:
+echo "duck\nmoose\ncat" > README.md
+git add README.md
+
+3:
+git commit -m "Initial commit"
+
+4:
+git checkout -b feature1
+
+5:
+sed -i 's/moose/mouse/' README.md
+echo "dog" >> README.md
+git commit -am "Added dog and changed moose to mouse"
+
+6:
+git checkout main
+sed -i 's/moose/mahmut/' README.md
+git commit -am "Changed moose to mahmut"
+
+7:
+(fixa konflikter)
+git merge feature1
+git add README.md
+git commit -m "Resolved merge conflict"
+
+8:
+git tag extinct
+
+9:
+git reset --hard HEAD~1
+
+10:
+git branch feature2
+
+11:
+Ändrade igen i textfilen
+git commit -am "Capitalized animal names"
+
+12:
+git checkout feature2
+echo "Content" > fix1.txt
+git add fix1.txt
+git commit -m "Added fix1.txt"
+echo "More content" > fix2.txt
+git add fix2.txt
+git commit -m "Added fix2.txt"
+
+13:
+git checkout main
+
+14: 
+git checkout feature2
+git log --oneline
+(kopiera f1f5a81)
+git checkout main
+git cherry-pick f1f5a81
+
+15:
+(kolla 14)
+
+16:
+git remote add origin https://github.com/Danback/LaborationGit.git
+git push -u origin main
+
+17:
+*.jar
+out/
+target/
+!target/*.html
+git add .gitignore
+git commit -m "Added .gitignore"
+git push
+
+
+18:
+git tag -a v1.0 -m "Version 1.0"
+git push origin v1.0
+
+19:
+git checkout main
+git rebase -i HEAD~2
+
+pick 614b892 Updated fix2.txt with gh push commands
+squash 3759132 Added .gitignore
+
+
