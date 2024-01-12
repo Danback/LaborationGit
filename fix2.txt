@@ -1,1 +1,6 @@
 More content
+git checkout feature2
+git log --oneline
+(kopiera f1f5a81)
+git checkout main
+git cherry-pick f1f5a81
