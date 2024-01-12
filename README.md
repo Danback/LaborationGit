@@ -1,0 +1,1 @@
+duck\nmoose\ncat
