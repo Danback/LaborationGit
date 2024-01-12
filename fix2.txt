@@ -99,4 +99,9 @@ git rebase -i HEAD~2
 pick 614b892 Updated fix2.txt with gh push commands
 squash 3759132 Added .gitignore
 
+20:
+git checkout -b feature3
+git add fix2.txt
+git commit -m "Updated fix2.txt with commands from steps 18 and 19"
+git push origin main
 
