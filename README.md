@@ -1,1 +1,1 @@
-duck\nmoose\ncat
+duck\nmahmut\ncat
