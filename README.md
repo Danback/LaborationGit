@@ -1,1 +1,2 @@
-duck\nmoose\ncat
+duck\nmouse\ncat
+dog
